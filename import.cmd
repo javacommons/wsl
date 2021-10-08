@@ -1,4 +1,5 @@
-wsl --unregister u2
-rmdir /s /q u2.wsl
-mkdir u2.wsl
-wsl --import u2 .\u2.wsl u2.tar
+wsl -t %1
+wsl --unregister %1
+rmdir /s /q %1.wsl
+mkdir %1.wsl
+wsl --import %1 .\%1.wsl %1.tar

@@ -1,3 +1,3 @@
-wsl -t u2
-del u2.tar
-wsl --export u2 u2.tar
+wsl -t %1
+del %1.tar
+wsl --export %1 %1.tar
